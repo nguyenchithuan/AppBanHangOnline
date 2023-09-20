@@ -1,8 +1,10 @@
-package edu.wkd.appbanhangonline;
+package edu.wkd.appbanhangonline.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import edu.wkd.appbanhangonline.R;
 
 public class MainActivity extends AppCompatActivity {
 
