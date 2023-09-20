@@ -1,9 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.SignInActivity">
+    tools:context=".view.activity.SignInActivity"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true"
+    >
+    <ImageView
+        android:id="@+id/img_Back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/baseline_keyboard_backspace_24"/>
+    <TextView
+        android:id="@+id/tvDangNhap"
+        android:layout_width="186dp"
+        android:layout_height="45dp"
+        android:text="Đăng Nhập"
+        android:textSize="36dp"
+        android:textColor="#FFC300"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edt_email"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:drawableRight="@drawable/baseline_remove_red_eye_24"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:hint="   Email hoặc có số điện thoại"
+        android:layout_marginTop="40dp"
+        android:layout_width="346dp"
+        android:layout_height="53dp"
+        android:background="@drawable/custom_edt"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/edt_passwod"
+       android:drawableLeft="@drawable/baseline_lock_24"
+        android:hint="   Mật Khẩu"
+        android:layout_marginTop="40dp"
+        android:layout_width="346dp"
+        android:layout_height="53dp"
+        android:background="@drawable/custom_edt"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/btnDangNhap"git
+        android:layout_marginTop="40dp"
+
+        android:layout_width="346dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:text="Đăng Nhập"
+        android:backgroundTint="#FFC300"/>
+        />
+    <TextView
+        android:id="@+id/tvQuenMatKhau"
+        android:layout_marginTop="15dp"
+        android:layout_width="140dp"
+        android:layout_height="22dp"
+        android:text="Quên mật khẩu?"
+        android:textSize="18dp"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="2dp"
+            android:textColor="#5F5F5F"
+            android:text="-------------"
+            android:background="#5F5F5F"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="49dp"
+            android:layout_height="25dp"
+            android:textColor="#585757"
+            android:text="Hoặc"
+            android:textSize="18dp"/>
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="2dp"
+            android:textColor="#5F5F5F"
+            android:text="-------------"
+            android:background="#5F5F5F"
+            />
+
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btnLoginFB"
+            android:layout_width="346dp"
+            android:layout_height="53dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#4285F4"
+            android:text="Login with FaceBook"
+
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:paddingBottom="@id/btnLoginFB"
+            android:src="@drawable/icfb"
+            app:layout_constraintBottom_toBottomOf="@+id/btnLoginFB"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="43dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btnLoginGG"
+            android:layout_width="346dp"
+            android:layout_height="53dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/white"
+            android:text="Login with Google"
+            android:textColor="@color/black"
+
+
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="12dp"
+            android:paddingBottom="@id/btnLoginFB"
+            android:src="@drawable/icgg"
+            app:layout_constraintBottom_toBottomOf="@+id/btnLoginGG"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="43dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        
+
+
+
+
+</LinearLayout>
